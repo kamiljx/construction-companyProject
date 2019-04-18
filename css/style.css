@@ -1,0 +1,345 @@
+body {
+    margin: 0%;
+}
+#upperheader{
+    height: 40px;
+    background-color: rgb(70, 67, 67);
+    text-align: left;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a:link{
+    margin-left: 40px;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    vertical-align: middle;
+    line-height: 60px;
+        align-items: center;
+
+}
+.contact img{
+    vertical-align: middle;
+    float: center;
+    padding: 3px;
+
+}
+.socialmedia img{
+    padding: 2px;
+    flex-wrap: nowrap;
+    vertical-align: middle;
+}
+
+#navbar {
+    margin: 0 auto;
+    background-color: purple;
+    width: 100%; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#menu {
+    display: table; 
+    padding: 0 10px 0; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    font-size: 14px; 
+}
+#menu li {
+    list-style-type: none; 
+    margin: 0 auto; 
+    float: left; 
+}
+#menu li:hover {
+    background: #404040;
+}
+#menu li a {
+    display: block; 
+    color: silver; 
+    text-decoration: none; 
+    padding: 7px 10px 7px;
+}
+#menu li a:hover {
+    background: #404040; 
+    color: white;
+}
+#menu li li a {
+    width: 160px;
+}
+#menu li ul {
+    overflow: hidden; 
+    display: none; 
+    background: #242424;
+}
+#menu li:hover ul {
+    position: absolute; 
+    padding: 0; 
+    display: block; 
+    width: 160px;
+}
+
+#logo{
+    background-color: rgb(48, 37, 48);
+/* margin: 0 auto; */
+width: 30%;
+float: left;
+height: 80px;
+}
+#logo img{
+    vertical-align: middle;
+    padding: 20px;
+}
+#rightbar{
+    float: right;
+    background-color: rgb(48, 37, 48);
+    width: 70%;
+    height: 80px; 
+}
+
+   
+#slide {
+  display: block;
+  width: 100%;
+  height: 800px;
+  background-color: #1f1f1f;
+  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+slider > * {
+  position: absolute;
+  /* display: block; */
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  background-color: #1f1f1f;
+  -webkit-animation: slide 12s infinite;
+  -moz-animation: slide 12s infinite;
+  -o-animation: slide 12s infinite;
+  animation: slide 12s infinite;
+  overflow: hidden;
+}
+
+slide:nth-child(1) {
+  left: 0%;
+  -webkit-animation-delay: -1s;
+  -moz-animation-delay: -1s;
+  -o-animation-delay: -1s;
+  animation-delay: -1s;
+   background-image: url(../img/header1.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+
+slide:nth-child(2) {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+  background-image: url(../img/header2.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+slide:nth-child(3) {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+  background-image: url(../img/header3.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+slide:nth-child(4) {
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  -o-animation-delay: 8s;
+  animation-delay: 8s;
+  background-image: url(../img/header4.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+
+slide p {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 20vh;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 30vh;
+  color: white;
+  text-shadow: 0px 0px 500px black;
+}
+
+
+
+
+@-webkit-keyframes slide {
+  0% {left: 100%; width: 100%} 
+  5% {left: 0%;} /* IN */
+  25% {left: 0%;} /*SHOW*/
+  30% {left: -100%; width: 100%;} /*OUT*/
+  30.00001% {left: -100%; width: 0%}
+  100% {left: 100%;width: 0%;} /*SLEEP*/
+}
+
+@-moz-keyframes slide {
+  0% {left: 100%; width: 100%} 
+  5% {left: 0%;} /* IN */
+  25% {left: 0%;} /*SHOW*/
+  30% {left: -100%; width: 100%;} /*OUT*/
+  30.00001% {left: -100%; width: 0%}
+  100% {left: 100%;width: 0%;} /*SLEEP*/
+}
+
+@-o-keyframes slide {
+  0% {left: 100%; width: 100%} 
+  5% {left: 0%;} /* IN */
+  25% {left: 0%;} /*SHOW*/
+  30% {left: -100%; width: 100%;} /*OUT*/
+  30.00001% {left: -100%; width: 0%}
+  100% {left: 100%;width: 0%;} /*SLEEP*/
+}
+
+@keyframes slide {
+  0% {left: 100%; width: 100%} 
+  5% {left: 0%;} /* IN */
+  25% {left: 0%;} /*SHOW*/
+  30% {left: -100%; width: 100%;} /*OUT*/
+  30.00001% {left: -100%; width: 0%}
+  100% {left: 100%;width: 0%;} /*SLEEP*/
+}
+
+  #services {
+    Width: 100%;
+    background-color: blue;
+    height: 1800px;
+    position: absolute;
+
+  }
+  h1{
+    font-size: 41px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 90px;
+  }
+  h1::before { 
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 65px;
+    height: 2px;
+    margin-top: 75px;
+    background: #f9b707;
+    transform: translate(-50%,0);
+  }
+  .robimy1{
+    background-color: white;
+    height: 450px;
+    margin: 0 30px 0 30px;
+    position: relative;
+  }
+
+  .lpicture{
+    background-color: red;
+    float: left;
+    flex-wrap: nowrap; 
+    height: 95%;
+    width: 40%;
+    margin: 10px 10px 10px 10px;
+  }
+  .lpicture2{
+    background-color: red;
+    float: left;
+    flex-wrap: nowrap; 
+    height: 95%;
+    width: 40%;
+    margin: 10px 10px 10px 10px;
+  }
+  q1{
+    font-size: 22px;
+    text-align: right;
+    color: antiquewhite;
+  }
+  q2{
+    font-size: 22px;
+    text-align: right;
+    color: antiquewhite;
+  }
+  .textr1{
+    background-color: purple;
+    float: right;
+    flex-wrap: wrap; 
+    height: 95%;
+    width: 55%;
+    margin: 10px 10px 10px 10px;
+    text-align: center;
+  }
+q1::before { 
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 42.5%;
+    width: 2px;
+    height: 165px;
+    margin-top: 130px;
+    background: #f9b707;
+    transform: translate(-50%,0);
+}
+
+.robimy2{
+    background-color: white;
+    height: 450px;
+    margin: 0 30px 0 30px;
+    position: relative;
+}
+.ppicture{
+      background-color: red;
+      float: right;
+      flex-wrap: nowrap; 
+      height: 95%;
+      width: 40%;
+      margin: 10px 10px 10px 10px;
+}
+.ppicture2{
+  background-color: red;
+  float: right;
+  flex-wrap: nowrap; 
+  height: 95%;
+  width: 40%;
+  margin: 10px 10px 10px 10px;
+}
+.textr2{
+      background-color: purple;
+      float: left;
+      flex-wrap: wrap; 
+      height: 95%;
+      width: 55%;
+      margin: 10px 10px 10px 10px;
+      text-align: center;
+}
+q2::before { 
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 42.5%;
+  width: 2px;
+  height: 165px;
+  margin-top: 130px;
+  background: #f9b707;
+  transform: translate(-50%,0);
+}
+.robimy4{
+  background-color: white;
+  height: 450px;
+  margin: 0 30px 0 30px;
+  position: relative;
+}
