@@ -499,22 +499,51 @@ h3{
   #contactform{
     width: 100%;
     height: 600px;
-    background-color: #d8dfe5;
+    background-color: aliceblue;
     position: absolute;
   }
 
+.contactinfo h1{
+    font-size: 41px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 30px;
+}
 
+.contactinfo h1::before { 
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  width: 65px;
+  height: 2px;
+  margin-top: 15px;
+  background: #f9b707;
+  transform: translate(-50%,0); 
+}
   .contactinfo{
     height: 95%;
-    background-color: #d8dfe5;
+    background-color: aliceblue;
     position: relative;
-    margin: 10px 0 0 45px;
+    margin: 0px 0 0 45px;
     width: 50%;
     display: inline-block;
     float: left;
+    text-align: center;
   }
-  a {
+  .contactinfo p{
+    margin-bottom: 40px;
+  }
+  .contactinfo a{
     text-decoration: none;
+    color: black;
+  }
+  label{
+    width: 200px;
+    display: inline-block;
+    font-size: 25px;
+    line-height: 20px;
   }
   .mapa{
     height: 95%;
@@ -522,6 +551,20 @@ h3{
     margin: 10px 45px 0 10px;
     width: 40%;
     float: right;
+  }
+  select{
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+    display: inline-block;
+  }
+  input{
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 10px;
   }
   .mapa::before { 
     content: '';

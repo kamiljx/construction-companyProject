@@ -127,6 +127,25 @@
             <p><a href="tel:+48123456789"><img src="img/phone.png"> Telefon: 123-456-789</a>
                <a href="mailto:rzeszutek98@gmail.com"><img src="img/mail.png">mail: rzeszutek98@gmail.com</a>
             </p>
+            <form action="mailto:rzeszutek98@gmail.com?subject=KontaktStrona" method="post">
+                   
+                    <div><label for="Imie">Imie</label><input type="text" name="Imie" id="Imie"></div>
+                    <div><label for="Nazwisko">Naziwsko</label><input type="text" name="Naziwsko" id="Nazwisko"></div>
+                    <div><label for="Email">Email</label><input type="email" name="Email" id="Email"></div>
+                    <div><label for="Telefon">Numer Telefonu</label><input type="tel" name="Telefon" id="Telefon"></div>            
+        
+            <div><label for="Kontakt">Kontakt z działem</label>
+                <select name="Kontakt" id="Kontakt">
+                    <option value="Administracja">Administracja</option>
+                    <option value="Ksiegowosc">Księgowość</option>
+                    <option value="Projekt">Biuro Projektowe</option>
+                    <option value="Sekretariat">Sekretariat</option>
+                </select>
+            </div>
+            <div>
+                    <input type="submit" value="Potwierdz">
+            </div>
+         </form>
         </div>
         <div class="mapa">
                 <div class="gmap_canvas">
