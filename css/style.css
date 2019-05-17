@@ -259,15 +259,25 @@ slide p {
     margin: 0 30px 0 30px;
     position: relative;
   }
-
+  #services .textr1 .lpicture .textr2 .ppicture {
+    width: 414px;
+    float: left;
+  }
+  #services:after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+  
   .lpicture{
     background-image: url(../img/airport.jpg);
-    background-size: 120%;
     float: left;
-    flex-wrap: nowrap; 
+    flex-wrap: wrap; 
     height: 95%;
     width: 40%;
     margin: 10px 10px 10px 10px;
+    position: relative;
+    background-size: cover;
   }
   .lpicture2{
     background-image: url(../img/most.jpg);
@@ -576,7 +586,9 @@ h3{
     margin-top: 30%;
     background: #f9b707;
   }
-
+/* .submit{
+  margin-top: 30px;
+} */
 .gmap_canvas {
   overflow:hidden;
   background:none!important;
